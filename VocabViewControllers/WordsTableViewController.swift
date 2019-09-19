@@ -21,12 +21,30 @@ class WordsTableViewController: UITableViewController {
         return vocabWords.count
     }
         
-       
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell", for: indexPath)
         
+        let word = vocabWords[indexPath.row]
         
+        cell.textLabel?.text = word.addWord
+      return cell
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowDefinitionSegue" {
+            let destination = segue.destination as? DefinitionViewController
+            //guard let destination == segue.destination as? DefinitionViewController else { return }
+            
+            
+           guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        
+            destination?.vocabWord = vocabWords[indexPath.row]
+    }
+
     
         
-        //("Office Space it", "McDonalds Internet", "Programming", "Internet")
     }
     
 
@@ -41,3 +59,4 @@ class WordsTableViewController: UITableViewController {
     */
 
 
+}

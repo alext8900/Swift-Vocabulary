@@ -9,11 +9,24 @@
 import UIKit
 
 class WordsTableViewController: UITableViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
+    var vocabWords: [VocabularyWord] = [
+        VocabularyWord(addWord: "Office Space it", definition: "To beat the crap out of something, like they do to the copy machine in the movie Office Space."),
+        VocabularyWord(addWord: "Mcdonald's Internet", definition: "Used to describe a poor internet connection, usually among players of competitive online games."),
+        VocabularyWord(addWord: "Programming", definition: "The art of turning caffeine into Error Messages."),
+        VocabularyWord(addWord: "Internet", definition: "A virtual place where everyone feels they have the right to force their opinions, offend, and engage in verbal barbarism between other users")
+    ]
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return vocabWords.count
+    }
+        
+       
+        
+        
+    
+        
+        //("Office Space it", "McDonalds Internet", "Programming", "Internet")
     }
     
 
@@ -27,4 +40,4 @@ class WordsTableViewController: UITableViewController {
     }
     */
 
-}
+

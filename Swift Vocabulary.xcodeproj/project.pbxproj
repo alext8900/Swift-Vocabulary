@@ -13,6 +13,7 @@
 		1F6D3C212332E3F30064C460 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F6D3C1F2332E3F30064C460 /* LaunchScreen.storyboard */; };
 		1F6D3C2D2332E4A50064C460 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6D3C2C2332E4A50064C460 /* DefinitionViewController.swift */; };
 		1F6D3C2F2332E68D0064C460 /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6D3C2E2332E68D0064C460 /* WordsTableViewController.swift */; };
+		1F6D3C312332F4D60064C460 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6D3C302332F4D60064C460 /* VocabularyWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1F6D3C222332E3F30064C460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F6D3C2C2332E4A50064C460 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 		1F6D3C2E2332E68D0064C460 /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
+		1F6D3C302332F4D60064C460 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		1F6D3C0A2332E3F10064C460 = {
 			isa = PBXGroup;
 			children = (
+				1F6D3C322332F4DB0064C460 /* Model */,
 				1F6D3C2B2332E4680064C460 /* VocabViewControllers */,
 				1F6D3C142332E3F20064C460 /* Products */,
 				1F6D3C1A2332E3F20064C460 /* Main.storyboard */,
@@ -73,6 +76,14 @@
 				1F6D3C2E2332E68D0064C460 /* WordsTableViewController.swift */,
 			);
 			path = VocabViewControllers;
+			sourceTree = "<group>";
+		};
+		1F6D3C322332F4DB0064C460 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F6D3C302332F4D60064C460 /* VocabularyWord.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +160,7 @@
 				1F6D3C172332E3F20064C460 /* AppDelegate.swift in Sources */,
 				1F6D3C2D2332E4A50064C460 /* DefinitionViewController.swift in Sources */,
 				1F6D3C2F2332E68D0064C460 /* WordsTableViewController.swift in Sources */,
+				1F6D3C312332F4D60064C460 /* VocabularyWord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
